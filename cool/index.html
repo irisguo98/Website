@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>❄️💩</title>
+</head>
+
+<style>
+  html, body { height: 100%; width: 100%; margin: 0; }
+
+  body {
+    background-image: url('imgs/iris_1.jpg');
+    background-size: 189px 252px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  marquee {
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 0;
+    animation: colorchange 1s;
+    -webkit-animation: colorchange 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: "Comic Sans MS", "SimHei", cursive, sans-serif;
+  }
+
+  @keyframes colorchange {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    75%  {color: green;}
+    100% {color: red;}
+  }
+
+  @-webkit-keyframes colorchange {
+    /* for safari only - necessary duplicate */
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    75%  {color: green;}
+    100% {color: red;}
+  }
+
+  .floatingpics {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 55%;
+  }
+
+  #leftpic {
+    left: 27%;
+    animation: opacitychange 0.6s;
+    -webkit-animation: opacitychange 0.6s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  #centerpic {
+    left: 52%;
+    animation: opacitychange 0.73s;
+    -webkit-animation: opacitychange 0.73s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  #rightpic {
+    left: 74%;
+    animation: opacitychange 0.5s;
+    -webkit-animation: opacitychange 0.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  @keyframes opacitychange {
+    0%   {opacity: 1;}
+    50%  {opacity: 0.5;}
+    100%  {opacity: 1;}
+  }
+
+  @-webkit-keyframes opacitychange {
+    0%   {opacity: 0.5;}
+    50%  {color: 1;}
+  }
+  </style>
+
+<body> 
+  <marquee scrollamount=50 behavior="alternate" style="height: 15%;">
+    <p style="font-size: 50px;">BB is love! BB is life!</p>
+  </marquee>
+
+  <marquee scrollamount=37 direction="right">
+    <p>小兔子 乖乖 把门开开啊 年年春天穿花衣啊 搞事情 搞事情 ho ho 搞事情</p>
+  </marquee>
+
+  <marquee scrollamount=50 direction="left">
+    <p>YO BB YO YO YO BB YO! YO BB YO YO YO BB YO! YO BB YO YO YO BB YO! </p>
+  </marquee>
+
+  <marquee scrollamount=37 behavior="alternate">
+    <p>大河向东流哇 天上的星星参北斗哇 嘿 嘿 参北斗哇 生死之交一碗酒哇</p>
+  </marquee>
+
+  <marquee scrollamount=50 direction="left">
+    <p>说走咱就走哇 你有我有全都有哇 嘿 嘿 全都有哇 水里火里不回头哇</p>
+  </marquee>
+
+  <marquee scrollamount=37 direction="right">
+    <p>路见不平一声吼哇 该出手时就出手哇 该出手时就出手哇</p>
+  </marquee>
+
+  <marquee scrollamount=75 behavior="alternate">
+    <p>Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo! Boo!</p>
+  </marquee>  
+
+  <marquee scrollamount=100 direction="left">
+    <p>宝宝好傻哈哈哈哈 宝宝好傻哈哈哈哈 宝宝好傻哈哈哈哈 宝宝好傻哈哈哈哈</p>
+  </marquee>  
+    
+  <marquee scrollamount=50 behavior="alternate" style="height: 15%;">
+    <p style="font-size: 50px;">BB is love! BB is life!</p>
+  </marquee>
+  
+  <img id='leftpic' class='floatingpics' src="imgs/iris_3.jpg">
+
+  <img id='centerpic' class='floatingpics' src="imgs/iris_4.jpg">
+  
+  <img id='rightpic' class='floatingpics' src="imgs/iris_2.jpg">
+
+</body> 
+</html>
